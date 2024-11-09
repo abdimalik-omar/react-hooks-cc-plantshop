@@ -26,6 +26,12 @@ function PlantPage() {
     setSearchQuery(query); // Update the search query
   };
 
+  const handleDeletePlant = (id) => {
+    setPlants((prevPlants) => prevPlants.filter((plant) => plant.id !== id));
+
+  
+}
+  
   const handleAddPlant = (newPlant) => {
     setPlants((prevPlants) => [...prevPlants, newPlant]);
   };
@@ -39,7 +45,9 @@ function PlantPage() {
     <div className="plant-page">
       <NewPlantForm onAddPlant={handleAddPlant} />
       <Search onSearch={handleSearch} />
-      <PlantList plants={filteredPlants} onToggleSoldOut={handleToggleSoldOut} />
+      <PlantList plants={filteredPlants} 
+      onToggleSoldOut={handleToggleSoldOut}
+      onDeletePlant={handleDeletePlant} />
     </div>
   );
 }
