@@ -25,9 +25,10 @@ JavaScript
 React
 GitHub
 
-upport and Contact Details
-github.com/abdimalik-omar1
+support and Contact Details
+https://github.com/abdimalik-omar/react-hooks-cc-plantshop.git
 
 License
 The content of this site is licensed under the MIT license.
 Copyright (c) 2024.
+
