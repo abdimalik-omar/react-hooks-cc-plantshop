@@ -8,7 +8,7 @@ function PlantPage() {
   const [searchQuery, setSearchQuery] = useState("");
 
   useEffect(() => {
-    fetch("http://localhost:6001/plants")
+    fetch("https://react-hooks-cc-plantshop-2-tans.onrender.com/plants")
       .then((response) => response.json())
       .then((data) => setPlants(data))
       .catch((error) => console.error("Error fetching plants:", error));
